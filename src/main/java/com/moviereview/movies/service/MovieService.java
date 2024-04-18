@@ -1,5 +1,7 @@
-package com.moviereview.movies;
+package com.moviereview.movies.service;
 
+import com.moviereview.movies.model.Movie;
+import com.moviereview.movies.dao.MovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

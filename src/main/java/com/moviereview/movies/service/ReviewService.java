@@ -1,5 +1,8 @@
-package com.moviereview.movies;
+package com.moviereview.movies.service;
 
+import com.moviereview.movies.dao.ReviewRepository;
+import com.moviereview.movies.model.Movie;
+import com.moviereview.movies.model.Review;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
@@ -7,7 +10,6 @@ import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.Optional;
 
 @Service
 public class ReviewService {

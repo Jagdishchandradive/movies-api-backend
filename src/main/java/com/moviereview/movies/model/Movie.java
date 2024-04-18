@@ -1,4 +1,4 @@
-package com.moviereview.movies;
+package com.moviereview.movies.model;
 
 
 import lombok.AllArgsConstructor;

@@ -1,5 +1,6 @@
-package com.moviereview.movies;
+package com.moviereview.movies.dao;
 
+import com.moviereview.movies.model.Review;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
