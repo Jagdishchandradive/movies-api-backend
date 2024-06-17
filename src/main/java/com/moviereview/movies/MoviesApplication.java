@@ -19,7 +19,7 @@ public class MoviesApplication {
 	}
 	@Bean
 
-	public WebMvcConfigurer corsConfigure() {
+	public WebMvcConfigurer corsConfigure     () {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
@@ -27,7 +27,8 @@ public class MoviesApplication {
 						.allowedOrigins("*")
 						.allowedMethods("*")
 						.allowedHeaders("*")
-						.allowCredentials(false).maxAge(3600);
+						.allowCredentials(false)
+						.maxAge(3600);
 			}
 		};
 	}

@@ -12,10 +12,11 @@ import java.util.Optional;
 public class MovieService {
     @Autowired
     private MovieRepository repository;
-    public List<Movie> findAllMovies(){
-        System.out.println(repository.findAll().toString());
-        return repository.findAll();
+
+    public List<Movie> findAllMovies(String title) {
+        return repository.findAll(title);
     }
+
     public Optional<Movie> findMovieByImdbId(String imdbId) {
         return repository.findMovieByImdbId(imdbId);
     }

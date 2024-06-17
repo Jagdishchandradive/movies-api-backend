@@ -20,8 +20,8 @@ public class MovieController {
     @Autowired
     private MovieService service;
     @GetMapping
-    public ResponseEntity<List<Movie>> getMovies(){
-        return new ResponseEntity<List<Movie>>(service.findAllMovies(), HttpStatus.OK);
+    public ResponseEntity<List<Movie>> getMovies(@PathVariable String title){
+        return new ResponseEntity<List<Movie>>(service.findAllMovies(title), HttpStatus.OK);
     }
     @GetMapping("/{imdbId}")
     public ResponseEntity<Optional<Movie>> getSingleMovie(@PathVariable String imdbId){
